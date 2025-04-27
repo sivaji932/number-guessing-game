@@ -1,0 +1,94 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body dark mode */
+body {
+    background: #121212;
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Main heading */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #00ffea;
+    text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea;
+}
+
+/* Introduction paragraph */
+#intro {
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+/* Difficulty selection and game card */
+#difficulty-selection, #game {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    color: white;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+}
+
+/* Input field */
+input[type="number"] {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #00c6ff;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    margin: 15px 0;
+    width: 80%;
+}
+
+/* Hint and Result text */
+#hint, #result {
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+/* Play Again Button special style */
+#playAgainBtn {
+    margin-top: 20px;
+    background: linear-gradient(135deg, #ff6ec4, #7873f5);
+}
+
+/* Lifes text */
+#lifes {
+    margin-top: 10px;
+    font-weight: bold;
+}

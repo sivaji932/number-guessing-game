@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Number Guessing Game</title>
+</head>
+<body>
+    <h1>🎯 Number Guessing Game 🎯</h1>
+    <p id="intro">
+        Welcome to the number guessing game!<br>
+        Get ready to test your luck and intuition.<br>
+        With three difficulty levels, will you triumph?<br>
+        Let the numbers reveal your fortune! 🍀
+    </p>
+
+    <div id="difficulty-selection">
+        <p>Select Difficulty:</p>
+        <button onclick="startGame(1)">Easy (1-5)</button>
+        <button onclick="startGame(2)">Medium (1-10)</button>
+        <button onclick="startGame(3)">Hard (1-20)</button>
+    </div>
+
+    <div id="game" style="display:none;">
+        <p id="status">The number has been chosen... 🤫</p>
+        <p id="lifes">Chances left: </p>
+        <input type="number" id="guessInput" placeholder="Enter your guess">
+        <button onclick="makeGuess()">Guess!</button>
+        <p id="hint"></p>
+        <p id="result"></p> <!-- 🔥 New place for final result -->
+        <button id="playAgainBtn" style="display:none;" onclick="playAgain()">Play Again 🔄</button>
+    </div>
+</body>
+</html>
